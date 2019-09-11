@@ -1,0 +1,1 @@
+Manter o nome do arquivo da tabela sempre: "PRATT_TABELA"
