@@ -70,10 +70,21 @@ p {
 }
 
 .state_selector {
-  position: absolute;
+  /* position: absolute;
   margin-top: 5%;
   margin-left: 15%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -60%); */
+
+  display: inline-block;
+  margin: auto;
+  justify-content: flex-start;
+  position: relative;
+  margin-left: 12px;
+  padding-left: 0px;
+}
+#REPRESENTANTES{
+  width: 100%;
+  margin: auto;
 }
 
 .state_selector select {
