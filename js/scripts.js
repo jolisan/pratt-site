@@ -4,6 +4,12 @@ function Mudarestado(el) {
   else document.getElementById(el).style.display = "none";
 }
 
+jQuery(document).ready(function(){
+  $("#cb_state").change(function() {
+   console.log("aq")
+  });
+});
+
 function changeESTADO(estado) {
   switch (estado) {
     case "ba":
