@@ -6,9 +6,10 @@ function Mudarestado(el) {
 
 jQuery(document).ready(function(){
   $("#cb_state").change(function() {
-   console.log("aq")
+      changeESTADO(this.value)
   });
 });
+
 
 function changeESTADO(estado) {
   switch (estado) {
