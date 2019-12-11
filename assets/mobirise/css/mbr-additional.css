@@ -46,12 +46,23 @@ body {
 }
 .display-5 {
   font-family: "Quattrocento Sans", sans-serif;
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1.4;
-  text-shadow: 0.5px 1px 3px #FFFFFF;  /* TEXT GLOW */
+  color: white;
+  -webkit-text-stroke: 0.8px rgb(62, 178, 199);  /* TEXT GLOW */
+  text-shadow: 0.5px 0.5px rgb(255, 255, 255);
 }
 .display-5 > .mbr-iconfont {
   font-size: 2.56rem;
+}
+.background-title{
+  background-color: rgba(255, 255, 255, 0.750);
+  border-radius: 8%;
+}
+.background-title2{
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .display-7 {
   font-family: "Quattrocento Sans", sans-serif;
@@ -1816,7 +1827,7 @@ body {
 .cid-rzIMqZtC5d {
   padding-top: 79px;
   padding-bottom: 189px;
-  background-image: url("../../../assets/images/limpeza-sala.jpg");
+  background-image: url("../../../assets/images/limpeza-sala.png");
   opacity: 0.89;
 }
 .cid-rzIMqZtC5d h1 {

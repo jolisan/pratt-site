@@ -510,7 +510,7 @@ p {
   height: 230px;
   padding-right: 0px;
   padding-left: 0px;
-  background-image: url("../images/limpeza-sala.jpg");
+  background-image: url("../images/limpeza-sala.png");
   background-size: cover;
 }
 
@@ -1103,7 +1103,7 @@ p {
   display: block;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 100px;
+  padding-top: 5px;
   padding-right: 0px;
   padding-left: 0px;
   grid-auto-columns: 1fr;
