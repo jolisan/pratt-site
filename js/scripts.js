@@ -1,3 +1,12 @@
+
+function sendMail() {  
+  let link = "mailto:pedidos@prattprofissional.com.br"
+           + "?subject=" + escape(document.getElementById('nameS').value) + escape(document.getElementById('phoneS').value) + escape(document.getElementById('subjectS').value)
+           + "&body=" + escape(document.getElementById('bodyS').value)
+  console.log(link)
+  window.location.href = link
+}
+
 function Mudarestado(el) {
   var display = document.getElementById(el).style.display;
   if (display == "none") document.getElementById(el).style.display = "block";
@@ -87,7 +96,7 @@ function changeESTADO(estado) {
       break;
 
     default:
-      console.log("não existe parceiros no estado - scripts.js");
+      console.log("Não existe parceiros no estado - scripts.js");
   }
   if(estado != "") $("#cb_state").val(estado);
   

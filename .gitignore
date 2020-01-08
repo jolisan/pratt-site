@@ -1,9 +1,0 @@
-# Ignore .env files
-.env
-
-#Ignore node_modules
-node_modules
-
-#Ignore yarn.lock
-
-yarn.lock
