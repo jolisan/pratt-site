@@ -94,6 +94,32 @@ function changeESTADO(estado) {
         '<h1 class="heading-9">REPRESENTANTES:</h1><h1 class="heading-9">PARÁ</h1></br><p class="paragraph-6">NOME: LIMPEX</br> TELEFONE: (91) 3254-2800 </br> E-MAIL: irmaosanjos.limpex@gmail.com </br> Belém/PA </br></br></p>';
       document.getElementById("REPRESENTANTES").innerHTML = pa;
       break;
+    
+    /*NOVA SIGLA 1
+    
+    case "ac":
+      var ac =
+        '<h1 class="heading-9">REPRESENTANTES:</h1><h1 class="heading-9">ACRE</h1></br><p class="paragraph-6">NOME: LIMPEX</br> TELEFONE: (91) 3254-2800 </br> E-MAIL: exemplo@gmail.com </br> Belém/PA </br></br></p>';
+      document.getElementById("REPRESENTANTES").innerHTML = ac;
+      break;*/
+    
+
+
+    /*NOVA SIGLA 2
+    
+    case "pa":
+      var pa =
+        '<h1 class="heading-9">REPRESENTANTES:</h1><h1 class="heading-9">PARÁ</h1></br><p class="paragraph-6">NOME: LIMPEX</br> TELEFONE: (91) 3254-2800 </br> E-MAIL: irmaosanjos.limpex@gmail.com </br> Belém/PA </br></br></p>';
+      document.getElementById("REPRESENTANTES").innerHTML = pa;
+      break;*/
+    
+    /*NOVA SIGLA 3
+    
+    case "pa":
+      var pa =
+        '<h1 class="heading-9">REPRESENTANTES:</h1><h1 class="heading-9">PARÁ</h1></br><p class="paragraph-6">NOME: LIMPEX</br> TELEFONE: (91) 3254-2800 </br> E-MAIL: irmaosanjos.limpex@gmail.com </br> Belém/PA </br></br></p>';
+      document.getElementById("REPRESENTANTES").innerHTML = pa;
+      break;*/
 
     default:
       console.log("Não existe parceiros no estado - scripts.js");
