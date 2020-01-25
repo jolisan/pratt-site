@@ -26,6 +26,7 @@
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/wbflw.css" rel="stylesheet" type="text/css">
   <link href="css/pratt.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
   <script src="js/scripts.js" type="text/javascript"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Varela Round:400","Oswald:200,300,400,500,600,700","Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Quattrocento Sans:regular,italic,700,700italic"]  }});</script>
@@ -98,11 +99,36 @@
                 </div>
             </nav>
         </section>
-
+<div class="state_selector">
+    <h2>Selecione o estado desejado</h2>
+    <select id=cb_state>
+        <option value="ba" selected>Bahia</option>
+        <option value="se" >Sergipe</option>
+        <option value="rs" >Rio Grande do Sul</option>
+        <option value="sp" >São Paulo</option>
+        <option value="ce" >Ceará</option>
+        <option value="to" >Tocantins</option>
+        <option value="ma" >Maranhão</option>
+        <option value="rn" >Rio Grande do Norte</option>
+        <option value="pi" >Piauí</option>
+        <option value="pb" >Paraíba</option>
+        <option value="rj" >Rio de Janeiro</option>
+        <option value="pa" >Pará</option>
+        <option value="sigla_exemplo" >EXEMPLO</option>
+    </select>
+</div>
 
 <div id="REPRESENTANTES">
     <script>
-        changeESTADO('ba')
+        let states = document.getElementById('cb_state')
+        let state_selected
+        for (let index = 0; index < states.length; index++) {
+            if (states.options[index].selected) { 
+                state_selected = states.options[index].value
+            }
+        }
+        
+        changeESTADO(state_selected)
     </script>
 </div>
 
@@ -136,16 +162,19 @@
                             <div class="col-lg-6 form-group" data-for="cidade">
                                 <input type="cidade" name="cidade" placeholder="Cidade/Estado" data-form-field="cidade" class="form-control display-7" required="required" id="cidade">
                             </div>
-                            <div class="col-lg-6 form-group" data-for="cidade">
+                            <div class="col-lg-6 form-group" data-for="cpf">
                                 <input type="cpf" name="cpf" placeholder="CPF" data-form-field="cpf" class="form-control display-7" required="required" id="cpf">
                             </div>
-                            <div class="col-lg-6 form-group" data-for="Title">
+                            <div class="col-lg-6 form-group" data-for="cnpj">
+                                    <input type="cnpj" name="cnpj" placeholder="CNPJ" data-form-field="cnpj" class="form-control display-7" id="cnpj">
+                                </div>
+                            <div class="col-lg-12 form-group" data-for="Title">
                                 <input type="text" name="Title" placeholder="Título do E-mail" data-form-field="Title" class="form-control display-7" required="required" id="Title-map01-10">
                             </div>
                             <div class="col-lg-12 form-group" data-for="message" style="">
                                 <textarea name="message" placeholder="Mensagem " data-form-field="message" class="form-control display-7" required="required" id="message-map01-10"></textarea>
                             </div>
-                            <h4 class="mbr-semibold pb-2 mbr-fonts-style display-7">* Tabela renovada a cada bimestre, consulte a validade no arquivo.</h4>
+                            <h4 class="mbr-semibold pb-2 mbr-fonts-style display-7">* Tabela atualizada a cada bimestre, consulte a validade no arquivo.</h4>
                             <div class="mbr-section-btn"><input type="submit" href="produtos/Tabela/PRATT_TABELA.xlsx" target="_blank" value="BAIXAR" data-wait="Aguarde..." class="submit-form w-button bida_center"></div>
                         </div>
                     </form>
